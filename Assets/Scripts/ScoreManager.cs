@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour
     TMP_InputField inputField;
     public TMP_Text leaderboardText;
 
-    public GameObject canvas;
+    public GameObject gameOverCanvas;
 
     public string PlayerName = ""; // Current player's name
     public float CurrentScore { get; private set; } = 0; // Current score
@@ -37,7 +37,7 @@ public class ScoreManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        inputField = canvas.transform.Find("NameInputField").GetComponent<TMP_InputField>();
+        inputField = gameOverCanvas.transform.Find("NameInputField").GetComponent<TMP_InputField>();
 
         LoadScores();
         UpdateLeaderboardUI(); // Update UI with leaderboard

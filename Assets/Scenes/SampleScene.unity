@@ -1056,7 +1056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leaderboardText: {fileID: 357566785}
-  canvas: {fileID: 1095101387}
+  gameOverCanvas: {fileID: 1095101387}
   PlayerName: 
   bIsScoreSubmitted: 0
   scoreMultiplier: 1
